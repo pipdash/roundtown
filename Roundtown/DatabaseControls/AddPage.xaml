@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Roundtown.AddPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Roundtown"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <ProgressRing Name="processRing" IsActive="False" Width="50" Height="50"></ProgressRing>
+
+        <TextBox x:Name="eventName" HorizontalAlignment="Left" Margin="116,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="234" BorderBrush="#00aeef"/>
+        <TextBox x:Name="eventLocation" HorizontalAlignment="Left" Margin="116,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="234" BorderBrush="#00aeef"/>
+        <TextBox x:Name="eventDate" HorizontalAlignment="Left" Margin="116,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="234" BorderBrush="#00aeef" />
+        <TextBox x:Name="eventDescription" HorizontalAlignment="Left" Margin="116,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="86" Width="234" BorderBrush="#00aeef"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,184,0,0" TextWrapping="Wrap" Text="Event Name:" FontWeight="Bold" VerticalAlignment="Top" Height="40" Width="101"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap" Text="Location:" FontWeight="Bold" VerticalAlignment="Top" Height="40" Width="101"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,274,0,0" TextWrapping="Wrap" Text="Date: " FontWeight="Bold" VerticalAlignment="Top" Height="40" Width="101"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="10,319,0,0" TextWrapping="Wrap" Text="Description" FontWeight="Bold" VerticalAlignment="Top" Height="40" Width="101"/>
+        <TextBlock x:Name="Header" HorizontalAlignment="Left" Margin="0,113,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="18" Text="Fill in the form below to add your event to our listings" VerticalAlignment="Top" Height="45" Width="350"/>
+        <Button x:Name="insertBtn" Content="Insert Event" HorizontalAlignment="Left" Margin="116,577,0,0" VerticalAlignment="Top" Height="57" Width="234" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#00aeef" BorderThickness="8" FontSize="18" Click="insertBtn_Click"/>
+        <Button x:Name="uploadBtn" Content="Upload Photo" HorizontalAlignment="Left" Margin="116,419,0,0" VerticalAlignment="Top" Height="53" Width="224" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#00aeef" BorderThickness="8" FontSize="18" Click="uploadBtn_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,67,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="Create New Event" VerticalAlignment="Top" Height="41" Width="340" FontSize="20" FontWeight="Bold"/>
+        <Image x:Name="blobImg" Source="Images/Notavailable.jpg" HorizontalAlignment="Left" Height="100" Margin="240,472,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Right" Margin="0,500,155,0" TextWrapping="Wrap" Text="Uploaded Photo:" FontWeight="Bold" VerticalAlignment="Top" Height="40" Width="155"/>
+    </Grid>
+</Page>

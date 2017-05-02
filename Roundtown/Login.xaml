@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Roundtown.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Roundtown"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="Header" HorizontalAlignment="Left" Margin="0,167,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="18" Text="Choose a login method below to access account features" VerticalAlignment="Top" Height="45" Width="350"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,67,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="Login" VerticalAlignment="Top" Height="41" Width="340" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="FacebookLogin" Content="Login with Facebook" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Height="83" Width="340" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#00aeef" BorderThickness="8" FontSize="18" Click="FacebookLogin_Click" />
+        <Button x:Name="GoogleLogin" Content="Login with Google" HorizontalAlignment="Left" Margin="10,432,0,0" VerticalAlignment="Top" Height="83" Width="340" Background="White" Foreground="Black" FontWeight="Bold" BorderBrush="#00aeef" BorderThickness="8" FontSize="18" Click="GoogleLogin_Click" />
+
+    </Grid>
+</Page>

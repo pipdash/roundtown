@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Roundtown.GeoLocation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Roundtown"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,200,12,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="10" Orientation="Vertical">
+            <TextBlock x:Name="LatitudeTextBlock" Height="40"/>
+            <TextBlock x:Name="LongitudeTextBlock" Height="40"/>
+            <TextBlock x:Name="StatusTextBlock" Height="40"/>
+            <Button x:Name="OneShotLocationButton" Click="OneShotLocation_Click" Content="Refresh location"/>
+        </StackPanel>
+    </Grid>
+</Page>
